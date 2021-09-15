@@ -28,7 +28,7 @@ public class ClientTemp extends Application {
         primaryStage.show();
 
         try {
-            Socket socket = new Socket("10.200.130.36", 22);
+            Socket socket = new Socket("10.200.130.36", 1980);
 
             fromServer = new DataInputStream(socket.getInputStream());
             toServer = new DataOutputStream(socket.getOutputStream());
