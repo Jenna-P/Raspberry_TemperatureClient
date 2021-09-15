@@ -1,6 +1,6 @@
 # Raspberry PI 
 *  Bunden forudsætning Teknologi og Programmering
-*  Daniella (ellamusen), Mikkel A. (TheProphet4000), Jenna(Jenna-P) og Sara (sasaje)
+*  Daniella (ellamusen), Mikkel A. (TheProphet4000), Jenna (Jenna-P) og Sara (sasaje)
 
 
 ## Overvejelser over implementeringsstrategi
