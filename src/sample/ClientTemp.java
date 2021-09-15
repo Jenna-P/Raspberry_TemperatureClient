@@ -33,6 +33,7 @@ public class ClientTemp extends Application {
             fromServer = new DataInputStream(socket.getInputStream());
             toServer = new DataOutputStream(socket.getOutputStream());
 
+            System.out.println("Output from server: " + fromServer);
         } catch (
                 IOException ex){
             System.out.println("ERROR!!");
