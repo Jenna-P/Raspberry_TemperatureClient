@@ -11,6 +11,7 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
+import java.util.Arrays;
 
 public class ClientTemp extends Application {
     DataOutputStream toServer = null;
@@ -29,24 +30,16 @@ public class ClientTemp extends Application {
 
         try {
             Socket socket = new Socket("10.200.130.36", 1980);
-
+            System.out.println("Server is running...");
             fromServer = new DataInputStream(socket.getInputStream());
             toServer = new DataOutputStream(socket.getOutputStream());
-
-            System.out.println("Output from server: " + fromServer);
-        } catch (
-                IOException ex){
-            System.out.println("ERROR!!");
-            ta.appendText(ex.toString() + '\n');
-        }
-
-        try {
-            String result = fromServer.readUTF();
-            System.out.println("Result is: " + result);
-            ta.appendText(result + "\n");
+              byte[] resultarray = fromServer.readAllBytes();
+              String result = new String(resultarray);
+              System.out.println("Result is: " + result);
+              
         } catch (IOException ex) {
-            System.out.println("Error2!!");
-            ex.printStackTrace();
+            System.out.println("ERROR!!");
+   //         ta.appendText(ex.toString() + '\n');
         }
     }
 }
