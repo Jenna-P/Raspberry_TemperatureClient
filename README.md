@@ -10,8 +10,8 @@
 5. Overstående virker på serveren (kan ses via terminalen kommandoen - python3 mydht.py).  
 6. Så gjorde vi det muligt at sende data fra server(raspberry pi'en) til clienten(vores computere) via oprettelsen af en socket forbindelse fra serverdelen. 
 7. Vi har etableret muligheden at sende data (her en String) fra server til clienten. 
-8. Næste trin vil være, at sende temperatur og luftfugtigheds data videre (bytes) til clienten. (vi er nået hertil, men er stødt på nogle udfordringer it. encoding/decoding delen. 
-9. Det sidste, som vi mangler er at den overførste data afspejles på et line chart via javafx.
+8. Næste trin vil være, at sende temperatur og luftfugtigheds data videre (bytes) til clienten. (vi er nået hertil, men er stødt på nogle udfordringer it. encoding/decoding delen). 
+9. Det sidste, som vi mangler er at den overførte data afspejles på et line chart via javafx.
  
 ## Valg af protokol(ler)
 TCP (beskriv hvorfor dette er et godt valg)
