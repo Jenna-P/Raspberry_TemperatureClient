@@ -1,4 +1,4 @@
-package sample;
+package com.example.demotemp;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -33,13 +33,25 @@ public class ClientTemp extends Application {
             System.out.println("Server is running...");
             fromServer = new DataInputStream(socket.getInputStream());
             toServer = new DataOutputStream(socket.getOutputStream());
-              byte[] resultarray = fromServer.readAllBytes();
-              String result = new String(resultarray);
-              System.out.println("Result is: " + result);
-              
+            byte[] resultarray = fromServer.readAllBytes();
+
+            byte[] temp = new byte[] {resultarray[0], resultarray[1]};
+            byte[] humi = new byte[] {resultarray[2], resultarray[3]};
+
+            System.out.println(Arrays.toString(resultarray));
+
+            String str1 = new String(temp);
+            String str2 = new String(humi);
+            double tempDouble = Double.parseDouble(str1);
+            double humiDouble = Double.parseDouble(str2);
+
+            System.out.println("Temp : " + tempDouble);
+            System.out.println("Humi : " + humiDouble);
+
+
         } catch (IOException ex) {
             System.out.println("ERROR!!");
-   //         ta.appendText(ex.toString() + '\n');
+            //         ta.appendText(ex.toString() + '\n');
         }
     }
 }
