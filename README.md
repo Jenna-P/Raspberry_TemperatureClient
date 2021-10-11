@@ -17,7 +17,6 @@
 TCP (beskriv hvorfor dette er et godt valg)
 Vi anvender TCP protokollen fordi denne protokol sikre at alt vores data sendes.
 Denne forsikre sig mod at der sker et datatab, idet der er en "godkendelses" process som hedder et three-way-handshake.
-Dette vil sige, at der ______________.
  
 ## Konklusion på udviklingsarbejdet
 *  Herunder beskrivelse af mangler
