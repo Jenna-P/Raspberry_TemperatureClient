@@ -20,8 +20,8 @@ Denne forsikre sig mod at der sker et datatab, idet der er en "godkendelses" pro
  
 ## Konklusion på udviklingsarbejdet
 *  Herunder beskrivelse af mangler
-   *  Vi mangler, at sende de indsamlede data fra Raspberry'en videre til clienten. Vi har fået den til at sende en fastlagt String. Men stødte ind i nogle problemer undervejs i denne process, som har sænket os ift afleveringsfristen. 
-      
+   * javafx graf.
+     
 *  Forslag til forbedringer og nye features
    *  Det kunne være nice-to-have at vores javafx graf afspejlede begge grafer i ét diagram. På baggrund af at der var forskellige y-akse-skalaer, har det for os ikke været muligt at merge dem sammen i det samme line chart. 
    *  En anden feature, som kunne være virkelig god at have med er en liveopdatere line chart, så den lige så snart at den modtager nyt data fra serverside, kunne opdatere og afspejles i vores client line chart. 
